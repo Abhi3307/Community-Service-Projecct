@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>csp</title>
+       <style>
+       .body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 20px;
+    }
+    
+    .box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transform: perspective(800px);
+    }
+    
+    .h1 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #009688;
+    }
+    
+    .h2 {
+      font-size: 22px;
+      margin-top: 40px;
+      color: #4CAF50;
+    }
+    
+    .p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    
+    .ul {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #555;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      
+      .h2 {
+        font-size: 20px;
+        margin-top: 30px;
+      }
+      
+      .p,
+      .ul {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #111;
+        }
+
+        .navbar .active {
+            background-color: #4CAF50;
+        }
+
+        .content {
+            padding: 20px;
+            display: none;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .head {
+            font-style: italic;
+            color: #9E4718;
+            margin-top: 0;
+        }
+
+        .heading1 {
+            color: #A3B318;
+        }
+
+        .head2 {
+            color: #1CA987;
+        }
+
+        .para1 {
+            font-family: cursive;
+            color: #555;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ff6600;
+        }
+
+        .names {
+            text-align: center;
+            color: #17830E;
+            margin-bottom: 10px;
+        }
+
+        .name-list {
+            display: flex;
+            justify-content: center;
+            font-family: Arial Black;
+        }
+
+        .name-list span {
+            margin: 0 10px;
+        }
+
+        #home {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" onclick="showSection('home')"class="active">Home</a>
+        <a href="#" onclick="showSection('csp-project')">CSP Project</a>
+        <a href="#"onclick="showSection('Questionnaire')">Questionnaire</a>
+        <a href="#" onclick="showSection('activitylog')">Activity Log</a>
+        <a href="#" onclick="showSection('survey-data')">Survey Data</a>
+        <a href="#" onclick="showSection('conclusion')">Conclusion</a>
+        <a href="#" onclick="showSection('spics')">Survey Pictures</a>
+        
+    </div>
+
+    <div class="content" id="home">
+        <h1 class="heading1">INTRODUCTION</h1>
+        <div class="para1">
+            <p>Business refers to the activity of producing, buying, or selling goods or services in order to earn a profit. It involves a wide range of activities, including the production of goods, provision of services, marketing, sales, distribution, and customer support. Businesses can vary in size and scope, ranging from small-scale enterprises operated by a single individual to large multinational corporations with operations spanning across multiple countries.
+            </p>
+            <p>
+                The primary goal of a business is to generate revenue and make a profit by providing goods or services that meet the needs and demands of consumers. In order to achieve this, businesses undertake various functions, such as identifying market opportunities, conducting market research, developing products or services, managing operations, implementing marketing strategies, and maintaining financial sustainability.
+            </p>
+            <p>
+                Businesses play a crucial role in the economy of a country. They contribute to economic growth, employment generation, and technological advancement. By producing goods and services, businesses meet the needs and desires of consumers, thereby driving demand and consumption. They also create job opportunities, providing employment to individuals and contributing to the overall well-being of society.
+            </p>
+            <p>
+                Businesses can operate in different sectors, such as manufacturing, agriculture, retail, finance, hospitality, healthcare, technology, and more. They can be structured as sole proprietorships, partnerships, corporations, or cooperatives, each with its own advantages and legal requirements.
+            </p>
+            <p>
+                In addition to generating profits, businesses also have social responsibilities. They are expected to operate ethically, adhere to legal regulations, promote sustainability, contribute to the community, and engage in corporate social responsibility initiatives.
+            </p>
+            <p>
+                Overall, businesses are fundamental to economic development and progress. They drive innovation, create wealth, facilitate trade and commerce, and contribute to the overall well-being and growth of society.</p>
+        </div>
+    </div>
+    
+          
+ 
+
+
+     <div class="content" id="Questionnaire">
+        <h2>Questionnaire</h2>
+        <ul>
+            <li>What is your name?</li>
+            <li>What is your age?</li>
+            <li>What is your village?</li>
+            <li>What is your phone number?</li>
+            <li>What is your Aadhar number?</li>
+            <li>What is your business?</li>
+        </ul>
+    </div>
+          
+          
+          
+    <div class="content" id="csp-project">
+        <h1 class="head">SURVEY ABOUT DIFFERENT TYPES OF BUSINESS IN RURAL AREAS</h1>
+        <p class="para1">This Survey aims to gather insights about different types of businesses like Grocery store, Dairy Business, Clothing store,etc… in rural areas.The main Aim of this survey is to find out what goods are most available to people living in rural areas and what good is least available.We visited AMANCHARLA, ALLUR, DEVARIPALEM villages of Nellore Rural to conduct our survey and we surveyed people about availability of goods in their villages</p>
+        <div>
+            <h3 class = "head2">Types Of Bussiness In Our Survey</h3>
+            <ul class = "para1">
+                <li>Food Bussiness</li>
+                <li>Textile Bussiness</li>
+                <li>Electrical Bussiness</li>
+                <li>Cosmetic Bussiness</li>
+                <li>Sea-Food Bussiness etc...</li>
+        
+            </ul>
+        </div>
+        <div>
+            <h2 class="names"> PRESENTED BY </h2>
+            <div class="name-list">
+                <span>SUMANTH BATHULA(212U1A3317)</span>
+                <span>A.V.S ABHILASH(212U1A3307)</span>
+                <span>A.V.M.N.S.S AJAY(212U1A3302)</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content" id="survey-data">
+        <h1 class="para1">Survey Data</h1>
+        <p>Here you can find the results of our surveys.</p>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            .button-container {
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+            }
+
+            .button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+            .button:hover {
+                background-color: #45a049;
+            }
+
+            @media screen and (max-width: 600px) {
+                table {
+                    font-size: 12px;
+                }
+            }
+
+            .heading {
+                color: #ffffff;
+                font-family: "Roboto";
+        </style>
+        </head>
+
+        <body>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.NO</th>
+                        <th>NAME</th>
+                        <th>AGE</th>
+                        <th>GENDER</th>
+                        <th>AADHAR</th>
+                        <th>PHONE</th>
+                        <th>VILLAGE NAME</th>
+                        <th>TYPE OF BUSINESS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>G.LAVANYA</td>
+                        <td>34</td>
+                        <td>F</td>
+                        <td>711449845616</td>
+                        <td>6281824243</td>
+                        <td>AMANCHARLA</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>P.VINOD</td>
+                        <td>23</td>
+                        <td>M</td>
+                        <td>523354607005</td>
+                        <td>9959838901</td>
+                        <td>AMANCHARLA</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>R.SRIHARI</td>
+                        <td>22</td>
+                        <td>M</td>
+                        <td>808051508911</td>
+                        <td>7989291269</td>
+                        <td>AMANCHARLA</td>
+                        <td>DAIRY</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>K.RAVI</td>
+                        <td>27</td>
+                        <td>M</td>
+                        <td>351833955439</td>
+                        <td>9160824233</td>
+                        <td>AMANCHARLA</td>
+                        <td>COSMETIC</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>U.SIVA</td>
+                        <td>68</td>
+                        <td>M</td>
+                        <td>804286871308</td>
+                        <td>8374777080</td>
+                        <td>AMANCHARLA</td>
+                        <td>DAIRY</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>N.NIRMALA</td>
+                        <td>60</td>
+                        <td>F</td>
+                        <td>854170092417</td>
+                        <td>9866921681</td>
+                        <td>AMANCHARLA</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>V.PENCHALA REDDY</td>
+                        <td>41</td>
+                        <td>M</td>
+                        <td>745400574859</td>
+                        <td>8072573032</td>
+                        <td>AMANCHARLA</td>
+                        <td>ELECTRONICS</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>O.ARUNAMMA</td>
+                        <td>54</td>
+                        <td>F</td>
+                        <td>249555309722</td>
+                        <td>9441004133</td>
+                        <td>AMANCHARLA</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>M.SUDHAKAR RAO</td>
+                        <td>40</td>
+                        <td>M</td>
+                        <td>555281838130</td>
+                        <td>9502574246</td>
+                        <td>AMANCHARLA</td>
+                        <td>ELECTRICAL</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>M.VENKATESWARULU</td>
+                        <td>30</td>
+                        <td>M</td>
+                        <td>422776363389</td>
+                        <td>8985874434</td>
+                        <td>AMANCHARLA</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>GAALI SURESH</td>
+                        <td>27</td>
+                        <td>M</td>
+                        <td>553237730245</td>
+                        <td>9959200613</td>
+                        <td>AMANCHARLA</td>
+                        <td>OTHER</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>H.MADHAVA RAO</td>
+                        <td>38</td>
+                        <td>M</td>
+                        <td>436542193006</td>
+                        <td>9441804549</td>
+                        <td>AMANCHARLA</td>
+                        <td>DAIRY</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>N.BAGHYA LAKSHMI</td>
+                        <td>43</td>
+                        <td>F</td>
+                        <td>646650902998</td>
+                        <td>7671000126</td>
+                        <td>AMANCHARLA</td>
+                        <td>SEA-FOOD</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>G.MADHAVA RAO</td>
+                        <td>39</td>
+                        <td>M</td>
+                        <td>412533957618</td>
+                        <td>6303002053</td>
+                        <td>AMANCHARLA</td>
+                        <td>SEA-FOOD</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>K.MALAKONDAYYA</td>
+                        <td>29</td>
+                        <td>M</td>
+                        <td>653198079118</td>
+                        <td>9705134212</td>
+                        <td>AMANCHARLA</td>
+                        <td>MEDICAL</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>M.CHENCHU RAM</td>
+                        <td>46</td>
+                        <td>M</td>
+                        <td>403026836052</td>
+                        <td>9573334486</td>
+                        <td>AMANCHARLA</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>B.GURUVA REDDY</td>
+                        <td>65</td>
+                        <td>M</td>
+                        <td>628842362152</td>
+                        <td>9666141508</td>
+                        <td>DEVARIPALEM</td>
+                        <td>DAIRY</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>N.MAHENDRA</td>
+                        <td>41</td>
+                        <td>M</td>
+                        <td>933130437638</td>
+                        <td>9848758873</td>
+                        <td>DEVARIPALEM</td>
+                        <td>POULTRY FARM</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>J.NARAYANA NAIDU</td>
+                        <td>32</td>
+                        <td>M</td>
+                        <td>428468536274</td>
+                        <td>8919076694</td>
+                        <td>DEVARIPALEM</td>
+                        <td>TUTOR</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>MALINENI SHIVAJI</td>
+                        <td>33</td>
+                        <td>M</td>
+                        <td>830563777108</td>
+                        <td>9440055838</td>
+                        <td>DEVARIPALEM</td>
+                        <td>AUTOMOBILE</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>P.SAI TEJA</td>
+                        <td>30</td>
+                        <td>M</td>
+                        <td>234255816448</td>
+                        <td>6304858370</td>
+                        <td>DEVARIPALEM</td>
+                        <td>OTHER</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>POLAIAH</td>
+                        <td>25</td>
+                        <td>M</td>
+                        <td>925341983937</td>
+                        <td>9010415941</td>
+                        <td>DEVARIPALEM</td>
+                        <td>DAIRY</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>PITTA NANDINI</td>
+                        <td>23</td>
+                        <td>F</td>
+                        <td>610381206745</td>
+                        <td>9441423545</td>
+                        <td>DEVARIPALEM</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>C.RAMESH</td>
+                        <td>28</td>
+                        <td>M</td>
+                        <td>711398155273</td>
+                        <td>9440551186</td>
+                        <td>DEVARIPALEM</td>
+                        <td>MEDICAL</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>R.SUBBA RAO</td>
+                        <td>34</td>
+                        <td>F</td>
+                        <td>837327001150</td>
+                        <td>9000777312</td>
+                        <td>DEVARIPALEM</td>
+                        <td>DAIRY</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>M.SUDHAKAR</td>
+                        <td>49</td>
+                        <td>M</td>
+                        <td>986191295524</td>
+                        <td>9551549213</td>
+                        <td>DEVARIPALEM</td>
+                        <td>AUTOMOBILE</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>K.NAGAMANI</td>
+                        <td>30</td>
+                        <td>F</td>
+                        <td>912056166127</td>
+                        <td>9087746381</td>
+                        <td>DEVARIPALEM</td>
+                        <td>OTHER</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>A.PRATAP</td>
+                        <td>27</td>
+                        <td>M</td>
+                        <td>762939431054</td>
+                        <td>9550216392</td>
+                        <td>DEVARIPALEM</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>M.SEENAIAH</td>
+                        <td>38</td>
+                        <td>M</td>
+                        <td>702897049257</td>
+                        <td>8985271266</td>
+                        <td>DEVARIPALEM</td>
+                        <td>ELECTRICAL</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>GOPI</td>
+                        <td>29</td>
+                        <td>M</td>
+                        <td>687167556491</td>
+                        <td>7386876991</td>
+                        <td>DEVARIPALEM</td>
+                        <td>COSMETICS</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>V.HANUMAIAH</td>
+                        <td>53</td>
+                        <td>M</td>
+                        <td>774547275805</td>
+                        <td>8247340606</td>
+                        <td>DEVARIPALEM</td>
+                        <td>SEA-FOOD</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>V.SUREKHA</td>
+                        <td>23</td>
+                        <td>F</td>
+                        <td>726934913154</td>
+                        <td>7675909754</td>
+                        <td>DEVARIPALEM</td>
+                        <td>OTHER</td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>B.SREENIVASULU</td>
+                        <td>48</td>
+                        <td>M</td>
+                        <td>921016561627</td>
+                        <td>9948835250</td>
+                        <td>DEVARIPALEM</td>
+                        <td>SEA-FOOD</td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>MADHAVI</td>
+                        <td>26</td>
+                        <td>F</td>
+                        <td>609232620212</td>
+                        <td>9409578392</td>
+                        <td>DEVARIPALEM</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>R.RAJAMMA</td>
+                        <td>24</td>
+                        <td>F</td>
+                        <td>957046103802</td>
+                        <td>6989004839</td>
+                        <td>DEVARIPALEM</td>
+                        <td>DAIRY</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>GUDI NAGAMANI</td>
+                        <td>39</td>
+                        <td>F</td>
+                        <td>683351535603</td>
+                        <td>7901623563</td>
+                        <td>AMANCHARLA</td>
+                        <td>SEA-FOOD</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>M.RAMANAIAH</td>
+                        <td>21</td>
+                        <td>M</td>
+                        <td>840712043970</td>
+                        <td>8096744046</td>
+                        <td>AMANCHARLA</td>
+                        <td>MEDICAL</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>BIRUDOLU PURNIMA</td>
+                        <td>31</td>
+                        <td>F</td>
+                        <td>664621046186</td>
+                        <td>9949967488</td>
+                        <td>AMANCHARLA</td>
+                        <td>OTHER</td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>ACHI SUGUNA</td>
+                        <td>44</td>
+                        <td>F</td>
+                        <td>946297380790</td>
+                        <td>7799622072</td>
+                        <td>AMANCHARLA</td>
+                        <td>DAIRY</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>B.MASTANAYYA</td>
+                        <td>43</td>
+                        <td>M</td>
+                        <td>769120624439</td>
+                        <td>9949754652</td>
+                        <td>AMANCHARLA</td>
+                        <td>ELECTRICAL</td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>GUDI NAGAMANI</td>
+                        <td>25</td>
+                        <td>F</td>
+                        <td>638855163530</td>
+                        <td>6305890759</td>
+                        <td>AMANCHARLA</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>G.HARIBABU</td>
+                        <td>39</td>
+                        <td>M</td>
+                        <td>785965358498</td>
+                        <td>9866950622</td>
+                        <td>AMANCHARLA</td>
+                        <td>DAIRY</td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>CH.MADHAVI</td>
+                        <td>31</td>
+                        <td>F</td>
+                        <td>206374962724</td>
+                        <td>9618416339</td>
+                        <td>AMANCHARLA</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>G.HARIBABU</td>
+                        <td>29</td>
+                        <td>M</td>
+                        <td>87659353484</td>
+                        <td>8997489098</td>
+                        <td>AMANCHARLA</td>
+                        <td>POULTRY FARM</td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>P.SUMATHI</td>
+                        <td>27</td>
+                        <td>F</td>
+                        <td>933130437638</td>
+                        <td>8897221246</td>
+                        <td>AMANCHARLA</td>
+                        <td>GROCERY</td>
+                    </tr>
+                    <tr>
+                        <td>46</td>
+                        <td>K.SUNEETHA</td>
+                        <td>57</td>
+                        <td>F</td>
+                        <td>912056166127</td>
+                        <td>8374966505</td>
+                        <td>AMANCHARLA</td>
+                        <td>OTHER</td>
+                    </tr>
+                    <tr>
+                        <td>47</td>
+                        <td>G.LAVANYA</td>
+                        <td>31</td>
+                        <td>F</td>
+                        <td>876593534849</td>
+                        <td>9866950662</td>
+                        <td>AMANCHARLA</td>
+                        <td>OTHER</td>
+                    </tr>
+                    <tr>
+                        <td>48</td>
+                        <td>P.CHIRANJEEVI</td>
+                        <td>36</td>
+                        <td>M</td>
+                        <td>876553561873</td>
+                        <td>9948505735</td>
+                        <td>AMANCHARLA</td>
+                        <td>AUTOMOBILE</td>
+                    </tr>
+                    <tr>
+                        <td>49</td>
+                        <td>BIRUDOLU PARVATHI</td>
+                        <td>44</td>
+                        <td>F</td>
+                        <td>922316253694</td>
+                        <td>9989900933</td>
+                        <td>AMANCHARLA</td>
+                        <td>DAIRY</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>OJILI MASTHAN</td>
+                        <td>51</td>
+                        <td>M</td>
+                        <td>769120624439</td>
+                        <td>6281931606</td>
+                        <td>AMANCHARLA</td>
+                        <td>OTHER</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+     <div class="content" id="activitylog"> <head>
+  <style>
+    .body2 {
+      font-family: Arial, sans-serif;
+    }
+    
+    
+    
+    .section-heading {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    
+    .week-heading {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .day-heading {
+      font-weight: bold;
+    }
+    
+    .activity-log {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body class = "body2">
+  <h1>ACTIVITY LOG</h1>
+  
+  <div class="activity-log">
+    <h2>CONSOLIDATED ACTIVITY LOG (8 WEEKS)</h2>
+    <table>
+      <tr>
+        <th>WEEK</th>
+        <th>ACTIVITY</th>
+      </tr>
+      <tr>
+        <td>WEEK-1</td>
+        <td>Problem identification and discussion</td>
+      </tr>
+      <tr>
+        <td>WEEK - 2</td>
+        <td>Conducting Survey</td>
+      </tr>
+      <tr>
+        <td>WEEK - 3</td>
+        <td>Preparation of Documentation and PPT</td>
+      </tr>
+      <tr>
+        <td>WEEK - 4</td>
+        <td>Learning required Technology</td>
+      </tr>
+      <tr>
+        <td>WEEK-5</td>
+        <td>Learning required Technology</td>
+      </tr>
+      <tr>
+        <td>WEEK - 6</td>
+        <td>Implementation of Project</td>
+      </tr>
+      <tr>
+        <td>WEEK - 7</td>
+        <td>Implementation of Project</td>
+      </tr>
+      <tr>
+        <td>WEEK - 8</td>
+        <td>Preparation of Complete Documentation</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="activity-log">
+    <h2>DETAILED REPORT:</h2>
+    <div class="section-heading">
+      <h3>WEEK - 1: Problem Identification and Discussion</h3>
+    </div>
+    <table>
+      <tr>
+        <th>DAY</th>
+        <th>ACTIVITY</th>
+      </tr>
+      <tr>
+        <td>DAY-1</td>
+        <td>Problem identification and discussion</td>
+      </tr>
+      <tr>
+        <td>DAY - 2</td>
+        <td>Selection of area and preparing questionnaire</td>
+      </tr>
+      <tr>
+        <td>DAY - 3</td>
+        <td>Conducting survey and collecting authentic data</td>
+      </tr>
+      <tr>
+        <td>DAY - 4</td>
+        <td>Collecting data and taking signatures of people</td>
+      </tr>
+      <tr>
+        <td>DAY-5</td>
+        <td>Taking Geotagged photos while during the Survey</td>
+      </tr>
+      <tr>
+        <td>DAY - 6</td>
+        <td>Obtaining GramaSachivalayam letter</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="activity-log">
+    <div class="section-heading">
+      <h3>WEEK - 2: Conducting the Survey</h3>
+    </div>
+    <table>
+      <tr>
+        <th>DAY</th>
+        <th>ACTIVITY</th>
+      </tr>
+      <!-- Add remaining days and activities for Week 2 here -->
+      <tr>
+        <td>DAY-1</td>
+        <td>Entering the surveyed data in the form of table in the document.</td>
+      </tr>
+      <tr>
+        <td>DAY - 2</td>
+        <td>Drawing inference from the data collected.</td>
+      </tr>
+      <tr>
+        <td>DAY - 3</td>
+        <td>Preparing Powerpoint presentation, adding geotagged pictures and inference drawn from surveyed data.</td>
+      </tr>
+      <tr>
+        <td>DAY - 4</td>
+        <td>Learning technology to implement our project</td>
+      </tr>
+      <tr>
+        <td>DAY-5</td>
+        <td>Implementation of our project</td>
+      </tr>
+      <tr>
+        <td>DAY - 6</td>
+        <td>Finalizing the website and checking documents</td>
+      </tr>
+    </table>
+  </div>
+  
+  <!-- Repeat the above structure for the remaining weeks -->
+  
+  <div class="activity-log">
+    <div class="section-heading">
+      <h3>WEEK - 3: Preparation of Documentation and PPT</h3>
+    </div>
+    <table>
+      <tr>
+        <th>DAY</th>
+        <th>ACTIVITY</th>
+      </tr>
+      <!-- Add remaining days and activities for Week 3 here -->
+      <tr>
+        <td>DAY-1</td>
+        <td>Creation of Title page, Certificate page and Declaration by Student.</td>
+      </tr>
+      <tr>
+        <td>DAY - 2</td>
+        <td>Creation of Acknowledgement page and Table of Contents page.</td>
+      </tr>
+      <tr>
+        <td>DAY - 3</td>
+        <td>Creation of Abstract page and Introduction page.</td>
+      </tr>
+      <tr>
+        <td>DAY - 4</td>
+        <td>Entering Surveyed data and adding Inference from surveyed data to document.</td>
+      </tr>
+      <tr>
+        <td>DAY-5</td>
+        <td>Adding Graphs from inference and implementation page to document.</td>
+      </tr>
+      <tr>
+        <td>DAY - 6</td>
+        <td>Adding Geotagged photos.</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="activity-log">
+    <div class="section-heading">
+      <h3>WEEK - 4: Learning Technology</h3>
+    </div>
+    <table>
+      <tr>
+        <th>DAY</th>
+        <th>ACTIVITY</th>
+      </tr>
+      <!-- Add remaining days and activities for Week 4 here -->
+      <tr>
+        <td>DAY-1</td>
+        <td>Learning HTML – Opening and Closing Tags</td>
+      </tr>
+      <tr>
+        <td>DAY - 2</td>
+        <td>Learning Basic Tags in HTML</td>
+      </tr>
+      <tr>
+        <td>DAY - 3</td>
+        <td>Learning Formatting Tags in HTML – Bold, Underline, Emphasis, Strong, etc.</td>
+      </tr>
+      <tr>
+        <td>DAY - 4</td>
+        <td>Learning Image tag to insert images into Website using HTML</td>
+      </tr>
+      <tr>
+        <td>DAY-5</td>
+        <td>Learning Required Table tags – TABLE, TR, TD, THEAD, etc.</td>
+      </tr>
+      <tr>
+        <td>DAY - 6</td>
+        <td>Learning Frames in HTML – Frames, Frame set, Horizontal Frame, Vertical Frame, Mixed Frame, etc.</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="activity-log">
+    <div class="section-heading">
+      <h3>WEEK - 5: Learning Technology</h3>
+    </div>
+    <table>
+      <tr>
+        <th>DAY</th>
+        <th>ACTIVITY</th>
+      </tr>
+      <!-- Add remaining days and activities for Week 5 here -->
+      <tr>
+        <td>DAY-1</td>
+        <td>Learning User Interface Components in HTML – Label, TextField, Button</td>
+      </tr>
+      <tr>
+        <td>DAY - 2</td>
+        <td>Learning User Interface Components in HTML – Checkbox, List</td>
+      </tr>
+      <tr>
+        <td>DAY - 3</td>
+        <td>Learning User Interface Components in HTML – Dropdown list, Text Area</td>
+      </tr>
+      <tr>
+        <td>DAY - 4</td>
+        <td>Learning about Submit button and Refresh button in HTML</td>
+      </tr>
+      <tr>
+        <td>DAY-5</td>
+        <td>Learning User Interface Components in HTML – Form Method, Post method, Get method</td>
+      </tr>
+      <tr>
+        <td>DAY - 6</td>
+        <td>Learning and Understanding Basics of JavaScript, Variables, DataTypes, Functions, etc.</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="activity-log">
+    <div class="section-heading">
+      <h3>WEEK - 6: Implementation of Project</h3>
+    </div>
+    <table>
+      <tr>
+        <th>DAY</th>
+        <th>ACTIVITY</th>
+      </tr>
+      <!-- Add remaining days and activities for Week 6 here -->
+      <tr>
+        <td>FULL WEEK</td>
+        <td>Implementation of Project (Creation of a website using HTML)</td>
+      </tr>
+      
+    </table>
+  </div>
+  
+  <div class="activity-log">
+    <div class="section-heading">
+      <h3>WEEK - 7: Implementation of Project</h3>
+    </div>
+    <table>
+      <tr>
+        <th>DAY</th>
+        <th>ACTIVITY</th>
+      </tr>
+      <!-- Add remaining days and activities for Week 7 here -->
+      <tr>
+        <td>FULL WEEK</td>
+        <td>Implementation of Project (Creation of a website using HTML)</td>
+      </tr>
+      
+    </table>
+  </div>
+  
+  <div class="activity-log">
+    <div class="section-heading">
+      <h3>WEEK - 8: Documentation</h3>
+    </div>
+    <table>
+      <tr>
+        <th>DAY</th>
+        <th>ACTIVITY</th>
+      </tr>
+      <!-- Add remaining days and activities for Week 8 here -->
+      <tr>
+        <td>FULL WEEK</td>
+        <td>Preparation of complete documentation and Hardbinding of the report</td>
+    </table>
+  </div>
+</body> </div>
+
+    <div class="content" id="conclusion">
+         <h1>Conclusion</h1>
+  <p>NO. OF PEOPLE SURVEYED – <span class="highlight">50</span></p>
+  <p>PERCENTAGE OF MALE – <span class="highlight">61%</span></p>
+  <p>PERCENTAGE OF FEMALE – <span class="highlight">39%</span></p>
+  <p>BUSINESS THAT IS MOST AVAILABLE – <span class="highlight">GROCERY</span></p>
+  <p>BUSINESS THAT IS LEAST AVAILABLE – <span class="highlight">MEDICAL</span></p>
+   <html>
+<head>
+  <title>Data Visualization</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* Box styles */
+    .chart-box {
+      width: 600px;
+      height: 400px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px auto;
+    }
+
+    /* Chart styles */
+    .chart-container {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-box">
+    <div class="chart-container">
+      <canvas id="barChart"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-box">
+    <div class="chart-container">
+      <canvas id="pieChart"></canvas>
+    </div>
+  </div>
+
+  <script>
+    // Data
+    const numberOfPeopleSurveyed = 50;
+    const percentageOfMale = 61;
+    const percentageOfFemale = 39;
+    const businessMostAvailable = 'Grocery';
+    const businessLeastAvailable = 'Medical';
+
+    // Bar Chart
+    new Chart(document.getElementById('barChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Male', 'Female'],
+        datasets: [
+          {
+            data: [percentageOfMale, percentageOfFemale],
+            backgroundColor: ['#36a2eb', '#ff6384'],
+            borderColor: ['#36a2eb', '#ff6384'],
+            borderWidth: 1
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          title: {
+            display: true,
+            text: 'Percentage of Male and Female'
+          }
+        },
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            title: {
+              display: true,
+              text: 'Percentage'
+            }
+          }
+        }
+      }
+    });
+
+    // Pie Chart
+    new Chart(document.getElementById('pieChart'), {
+      type: 'pie',
+      data: {
+        labels: ['Grocery', 'Medical', 'Diary', 'Farms/Seafoods', 'Private', 'Other'],
+        datasets: [
+          {
+            data: [23, 6, 20, 6, 21, 14],
+            backgroundColor: ['#4bc0c0', '#ff6384', '#36a2eb', '#ff9f40', '#9966ff', '#ffcd56'],
+            borderColor: ['#4bc0c0', '#ff6384', '#36a2eb', '#ff9f40', '#9966ff', '#ffcd56'],
+            borderWidth: 1
+          }
+        ]
+      },
+      options: {
+        plugins: {
+          title: {
+            display: true,
+            text: 'Business Availability'
+          }
+        },
+        responsive: true
+      }
+    });
+  </script>
+</body>
+</html>
+  <div class = "body">
+  <div class="box">
+    <h1 class = "h1">From Our Survey:</h1>
+    <p class = "p">We concluded that grocery business is the highest available to people in rural areas, followed by dairy (milk products). Medical business is the least available to people living in rural areas. The health industry is very lacking in rural areas.</p>
+
+    <h2 class = "h2">Solutions:</h2>
+    <ul class= "ul">
+      <li>Providing feedback and letting people know about the situation of availability of medical facilities in their area and suggesting them to increase the medical facilities.</li>
+      <li>Educating people about health and necessary medication.</li>
+      <li>Self-awareness campaigns to raise awareness among people regarding this problem.</li>
+    </ul>
+  </div>
+</div>
+       
+    </div>
+    
+
+    <div class="content" id="spics">
+        <h1>Survey Pictures</h1>
+        
+        
+       
+            <div>
+                <img src="C:\csp pics\all.jpg" alt="Slide 1">
+            </div>
+            
+ 
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName("content");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(sectionId).style.display = "block";
+        }
+    </script>
+    </body>
+
+</html>
+
